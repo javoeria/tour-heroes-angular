@@ -5,12 +5,12 @@ import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
 
 @Component({
-  selector: 'app-heroes',
+  selector: 'app-dashboard',
   imports: [CommonModule, RouterModule],
-  templateUrl: './heroes.component.html',
-  styleUrl: './heroes.component.css'
+  templateUrl: './dashboard.component.html',
+  styleUrl: './dashboard.component.css'
 })
-export class HeroesComponent implements OnInit {
+export class DashboardComponent implements OnInit {
   heroes: Hero[] = [];
 
   constructor(private heroService: HeroService) { }
@@ -20,6 +20,6 @@ export class HeroesComponent implements OnInit {
   }
 
   getHeroes(): void {
-    this.heroService.getHeroes().subscribe(heroes => this.heroes = heroes);
+    this.heroService.getHeroes().subscribe(heroes => this.heroes = heroes.slice(1, 5));
   }
 }
