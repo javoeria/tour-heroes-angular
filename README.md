@@ -1,4 +1,13 @@
-# AngularTourOfHeroes
+# tour-heroes-angular
+
+The **Tour of Heroes** application that you build helps a staffing agency manage its stable of heroes. The application has many of the features that you'd expect to find in any data-driven application.
+
+The finished application:
+
+- Gets a list of heroes
+- Displays the heroes in a list
+- Edits a selected hero's details
+- Navigates between different views of heroic data
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
 
